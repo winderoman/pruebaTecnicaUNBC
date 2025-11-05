@@ -2,11 +2,11 @@
 
 ## Descripción
 Sistema Satélite SIGE es una aplicación desarrollada con **Laravel 9**
-1 módulo completo: Idoneidad Docente
-Base de datos: Diseño e implementación de tablas necesarias
-Importación: Carga de datos con validación anti-duplicados
-Autenticación básica: Laravel Auth (sin roles ni permisos)
-Vista de consulta: Listado de datos con filtros básicos
+* 1 módulo completo: Idoneidad Docente
+* Base de datos: Diseño e implementación de tablas necesarias
+* Importación: Carga de datos con validación anti-duplicados
+* Autenticación básica: Laravel Auth (sin roles ni permisos)
+* Vista de consulta: Listado de datos con filtros básicos
 
 ---
 
@@ -66,10 +66,14 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
      DB_PASSWORD=
      ```
 
-5. **Ejecutar migraciones (y seeders si aplica)**
+5. **Ejecutar migraciones**
 
    ```bash
-   php artisan migrate --seed
+   php artisan migrate
+   ```
+
+   ```bash
+   php artisan db:seed --class=UserSeeder
    ```
 
 ---
@@ -82,12 +86,6 @@ Para compilar los estilos y scripts con **Vite**, ejecuta:
 
   ```bash
   npm run dev
-  ```
-
-- En modo producción (archivos optimizados):
-
-  ```bash
-  npm run build
   ```
 
 Asegúrate de tener el proceso de `npm run dev` corriendo mientras usas `php artisan serve`,  
@@ -112,9 +110,10 @@ http://127.0.0.1:8000
 ## Autenticación
 
 email: admin@gmail.com
+
 passw: password
 
 ---
 
-Desarrollado por ** Winder Román **  
+Desarrollado por **Winder Román**  
 Laravel 9 + Breeze + Vite
