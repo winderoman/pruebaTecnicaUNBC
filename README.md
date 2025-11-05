@@ -65,6 +65,12 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
      DB_USERNAME=root
      DB_PASSWORD=
      ```
+   - Crear directorios
+      ```bash
+        mkdir storage/app/imports
+        mkdir storage/app/imports/temp
+        mkdir storage/app/imports/procesados
+     ```
 
 5. **Ejecutar migraciones**
 
